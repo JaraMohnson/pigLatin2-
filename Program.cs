@@ -61,7 +61,7 @@ static void ConsonantConvert(ref string input) // does variable name after ref h
 
             int remainingLetters = (input.Length - moveThis.Length); // to make sure all remaining letters are accounted for after I substring out "move this"
 
-            newStart = input.Substring(vowelPosition, remainingLetters); // this starts at vowel position, and takes all remaining letters as rest of substring
+            newStart = input.Substring(vowelPosition, remainingLetters); // this starts at vowel position, and takes # of remaining letters as rest of substring
 
             string newWord = (newStart + moveThis + "ay");
             Console.WriteLine(newWord);
